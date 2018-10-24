@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface RedViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *redLabel;
 
-@property (copy, nonatomic) IBOutlet UILabel *redVCLabel;
-
-- (void)setRedVCLabel:(UILabel *)redVCLabel;
+@property (copy, nonatomic) NSString  *orginValue;
+//- (void)setRedVCLabel:(UILabel *)redVCLabel;
 
 @end
 

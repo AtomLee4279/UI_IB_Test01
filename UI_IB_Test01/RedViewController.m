@@ -16,9 +16,12 @@
 
 @implementation RedViewController
 
+//@synthesize redVCLabel;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    id tmp = _redVCLabel;
+    NSLog(@"RedViewController:viewDidLoad%@,redLabel%@",self,_redLabel);
+//    _redLabel.text = self.orginValue;
     // Do any additional setup after loading the view.
     
 }
@@ -47,15 +50,16 @@
 //    return _redVCLabel;
 //}
 
-#pragma mark -setter
-- (void)setRedVCLabel:(UILabel *)redVCLabel{
-    if (_redVCLabel==nil) {
-        _redVCLabel = [[UILabel alloc] init];
-    }
-    [self.view addSubview:_redVCLabel];
-    _redVCLabel = redVCLabel;
-    _redVCLabel.text = redVCLabel.text;
-}
+#pragma mark -getter && setter
+//- (void)setRedVCLabel:(UILabel *)redVCLabel{
+//    if (_redVCLabel==nil) {
+//        _redVCLabel = [[UILabel alloc] init];
+//    }
+////    [self.view addSubview:_redVCLabel];
+//    _redVCLabel = redVCLabel;
+//    _redVCLabel.text = redVCLabel.text;
+//    
+//}
 
 
 

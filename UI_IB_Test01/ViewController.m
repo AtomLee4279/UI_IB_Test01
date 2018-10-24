@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+   
     
 }
 //storyboard->storyboard
@@ -32,15 +32,20 @@
     [self presentViewController:userVC animated:YES completion:nil];
 }
 
-
+//在segue跳转前，设置目标vc的成员属性，传过去
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"orginalVCSegue"]) {
         if ([segue.destinationViewController isKindOfClass:[RedViewController class]]&&[segue.sourceViewController isKindOfClass:[ViewController class]]) {
+            
             RedViewController *redVC = segue.destinationViewController;
-            UILabel *label = [[UILabel alloc] init];
-            label.text = @"rrr";
-            redVC.redVCLabel = label;
-          
+//            NSString *tmp = @"rrr";
+//            [redVC setValue:tmp forKey:@"orginValue"];
+//            UILabel *label = [[UILabel alloc] init];
+//            label.text = @"rrr";
+            redVC.redLabel.text = @"rrr";
+            NSLog(@"prepareForSegue:redVc%@,redLabel%@",redVC,redVC.redLabel);
+            
+            
             
         }
     }
