@@ -32,7 +32,7 @@
     [self presentViewController:userVC animated:YES completion:nil];
 }
 
-//在segue跳转前，设置目标vc的成员属性，传过去
+//在segue跳转到红色vc前，设置目标vc的成员属性，传过去
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"orginalVCSegue"]) {
         if ([segue.destinationViewController isKindOfClass:[RedViewController class]]&&[segue.sourceViewController isKindOfClass:[ViewController class]]) {
@@ -53,6 +53,13 @@
 }
 
 
+- (IBAction)goToBlue:(id)sender {
+    
+    [self performSegueWithIdentifier:@"goToBlue" sender:sender];
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -66,5 +73,6 @@
     
     [self presentViewController:userVC animated:YES completion:nil];
 }
+
 
 @end
