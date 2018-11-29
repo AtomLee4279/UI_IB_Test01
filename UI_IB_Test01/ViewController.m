@@ -65,13 +65,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+//BlueVC使用segue回退到VC将调用此方法
 - (IBAction)backToThisSb:(UIStoryboardSegue*)unwindSegue {
-    UIStoryboard *user = [UIStoryboard storyboardWithName:@"User" bundle:nil];
-    UIViewController *userVC = [user instantiateViewControllerWithIdentifier:@"UserViewController"];
-    [self setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+   // UIStoryboard *user = [UIStoryboard storyboardWithName:@"User" bundle:nil];
+    //UIViewController *userVC = [user instantiateViewControllerWithIdentifier:@"UserViewController"];
+    //[self setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     //    [userVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
     
-    [self presentViewController:userVC animated:YES completion:nil];
+   // [self presentViewController:userVC animated:YES completion:nil];
+    
+    
 }
 
 

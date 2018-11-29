@@ -7,6 +7,7 @@
 //
 
 #import "BlueViewController.h"
+#import "ViewController.h"
 
 @interface BlueViewController ()
 
@@ -28,6 +29,26 @@
 - (IBAction)blue_Back:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+- (IBAction)exit_Segue:(id)sender {
+    
+    //执行segue跳页的方法
+    [self performSegueWithIdentifier:@"fromBlueToOrginVC" sender:nil];
+//    [self setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+}
+
+
+//尝试在segue跳回orgin_vc前，设置vc切换的展示方式
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"fromBlueToOrginVC"]) {
+        if ([segue.destinationViewController isKindOfClass:[ViewController class]]&&[segue.sourceViewController isKindOfClass:[BlueViewController class]]) {
+            
+//            [segue.destinationViewController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+            
+        }
+    }
     
 }
 /*
