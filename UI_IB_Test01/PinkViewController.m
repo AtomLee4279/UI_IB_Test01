@@ -1,30 +1,30 @@
 //
-//  UserViewController.m
+//  PinkViewController.m
 //  UI_IB_Test01
 //
-//  Created by 李一贤 on 2018/8/13.
-//  Copyright © 2018年 李一贤. All rights reserved.
+//  Created by 李一贤 on 2018/11/30.
+//  Copyright © 2018 李一贤. All rights reserved.
 //
 
-#import "UserViewController.h"
+#import "PinkViewController.h"
 
-@interface UserViewController ()
+@interface PinkViewController ()
 
 @end
 
-@implementation UserViewController
+@implementation PinkViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (IBAction)backToViewVC:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+
+- (IBAction)back:(id)sender {
+    
+//    [self removeFromParentViewController];
+    [self.view removeFromSuperview];
+    
 }
 
 /*

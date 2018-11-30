@@ -20,6 +20,8 @@
 		6789A83B213F800E00B9592F /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789A83A213F800E00B9592F /* RedViewController.m */; };
 		6789A83E213F803500B9592F /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789A83D213F803500B9592F /* BlueViewController.m */; };
 		67BDD849213E283800B7B16D /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BDD848213E283800B7B16D /* TestCell.m */; };
+		67F5996C21B12FD100E2FD80 /* MyCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F5996B21B12FD100E2FD80 /* MyCustomSegue.m */; };
+		67F5996F21B134D100E2FD80 /* PinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F5996E21B134D100E2FD80 /* PinkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		6789A83D213F803500B9592F /* BlueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
 		67BDD847213E283800B7B16D /* TestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		67BDD848213E283800B7B16D /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		67F5996A21B12FD100E2FD80 /* MyCustomSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCustomSegue.h; sourceTree = "<group>"; };
+		67F5996B21B12FD100E2FD80 /* MyCustomSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCustomSegue.m; sourceTree = "<group>"; };
+		67F5996D21B134D100E2FD80 /* PinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinkViewController.h; sourceTree = "<group>"; };
+		67F5996E21B134D100E2FD80 /* PinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				67630745210EA8BA008130C8 /* ViewController.h */,
 				67630746210EA8BA008130C8 /* ViewController.m */,
 				67630748210EA8BA008130C8 /* Main.storyboard */,
+				67F5996A21B12FD100E2FD80 /* MyCustomSegue.h */,
+				67F5996B21B12FD100E2FD80 /* MyCustomSegue.m */,
+				67F5996D21B134D100E2FD80 /* PinkViewController.h */,
+				67F5996E21B134D100E2FD80 /* PinkViewController.m */,
 				6789A839213F800E00B9592F /* RedViewController.h */,
 				6789A83A213F800E00B9592F /* RedViewController.m */,
 				6789A83C213F803500B9592F /* BlueViewController.h */,
@@ -232,6 +242,8 @@
 				67630747210EA8BA008130C8 /* ViewController.m in Sources */,
 				6789A83B213F800E00B9592F /* RedViewController.m in Sources */,
 				67BDD849213E283800B7B16D /* TestCell.m in Sources */,
+				67F5996C21B12FD100E2FD80 /* MyCustomSegue.m in Sources */,
+				67F5996F21B134D100E2FD80 /* PinkViewController.m in Sources */,
 				67630752210EA8BE008130C8 /* main.m in Sources */,
 				67807C4C212136FF0093BFF8 /* UserViewController.m in Sources */,
 				67807C5021213F860093BFF8 /* XibViewController.m in Sources */,

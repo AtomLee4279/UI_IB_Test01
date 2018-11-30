@@ -25,11 +25,18 @@
 }
 //storyboard->storyboard
 - (IBAction)sbToSb:(id)sender {
+    //1.使用Modal的方式展示，将销毁掉现有的navigate
+//    UIStoryboard *user = [UIStoryboard storyboardWithName:@"User" bundle:nil];
+//    UIViewController *userVC = [user instantiateViewControllerWithIdentifier:@"UserViewController"];
+//    [userVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
+//
+//    [self presentViewController:userVC animated:YES completion:nil];
+    
+    //2.使用push的方式，将保留navigate
     UIStoryboard *user = [UIStoryboard storyboardWithName:@"User" bundle:nil];
     UIViewController *userVC = [user instantiateViewControllerWithIdentifier:@"UserViewController"];
-    [userVC setModalTransitionStyle:(UIModalTransitionStyleFlipHorizontal)];
-
-    [self presentViewController:userVC animated:YES completion:nil];
+    [self.navigationController pushViewController:userVC
+                                         animated:YES];
 }
 
 //在segue跳转到红色vc前，设置目标vc的成员属性，传过去
