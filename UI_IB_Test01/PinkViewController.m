@@ -23,7 +23,8 @@
 - (IBAction)back:(id)sender {
     
 //    [self removeFromParentViewController];
-    [self.view removeFromSuperview];
+//    [self.view removeFromSuperview];
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 
